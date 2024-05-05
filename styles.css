@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(30, 54%, 90%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    color: hsl(24, 5%, 18%);
+   
+}
+p {
+    font-size: 16px;
+}
+
+.recipe-container {
+    background: hsl(0, 0%, 100%);
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 65vw;
+    border-radius: 20px;
+    padding: 40px;
+    
+    
+
+
+}
+.header-img{
+    margin-bottom: 30px;
+}
+
+.header-img img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.recipe-info h1{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+}
+.recipe-info p {
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+
+.preparation-time {
+    background: linear-gradient( hsl(330, 100%, 98%));
+    padding: 30px;
+}
+.preparation-time h1{
+    font-size: 20px;
+    font-weight: bold;
+     color: hsl(332, 51%, 32%);
+     margin-bottom: 15px;
+}
+
+.preparation-time-specifics {
+    
+    margin-left: 20px;
+    line-height: 28px;
+
+    
+}
+
+
+.preparation-time-specifics li span{
+   color: hsl(24, 5%, 18%);
+   font-weight: 700;
+}
+.ingredients{
+    margin-bottom: 30px;
+}
+.ingredients h1{
+font-size: 24px;
+color: hsl(14, 45%, 36%);
+margin-bottom: 20px;
+}
+.ingredients-specifics{
+    margin-left: 10px;
+    line-height: 28px;
+}
+.instructions{
+    margin-bottom: 30px;
+}
+.instructions h1 {
+    font-size: 24px;
+    color: hsl(14, 45%, 36%);
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+.instructions-specifics {
+    
+    margin-left: 10px;
+    line-height: 28px;
+}
+.instructions-specifics li strong {
+    color:hsl(24, 5%, 18%) ;
+}
+.nutrition{
+    margin-top: 30px;
+}
+.nutrition h1 {
+    font-size: 24px;
+    color: hsl(14, 45%, 36%);
+    margin-bottom: 20px;
+}
+
+.nutrition .description {
+    margin-bottom: 20px;
+}
+.nutrition-specifics {
+    list-style: none;
+    margin-left: 15px;
+    line-height: 35px;
+}
+.nutrition-specifics li p {
+    width: 50px;
+    display: inline-block;
+}
+.nutrition-specifics li span {
+    margin-left: 150px;
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
