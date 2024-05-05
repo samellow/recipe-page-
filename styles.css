@@ -20,6 +20,7 @@ p {
     font-size: 16px;
 }
 
+
 .recipe-container {
     background: hsl(0, 0%, 100%);
     margin-top: 100px;
@@ -32,6 +33,21 @@ p {
 
 
 }
+@media (max-width: 767px) {
+    body {
+      margin: 0;
+    }
+    .recipe-container {
+      min-width: 100%;
+      border-radius: 0;
+    }
+    .recipe-container img {
+      max-width: 100%;
+      border-radius: 0;
+      padding: 0;
+    }
+  }
+  
 .header-img{
     margin-bottom: 30px;
 }
@@ -53,8 +69,9 @@ p {
 }
 
 .preparation-time {
-    background: linear-gradient( hsl(330, 100%, 98%));
+    background: hsl(330, 100%, 98%);
     padding: 30px;
+    border-radius: 20px;
 }
 .preparation-time h1{
     font-size: 20px;
@@ -70,7 +87,13 @@ p {
 
     
 }
-
+.preparation-time-specifics li {
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+.preparation-time-specifics li::marker {
+    color: hsl(332, 51%, 32%);
+}
 
 .preparation-time-specifics li span{
    color: hsl(24, 5%, 18%);
@@ -88,6 +111,12 @@ margin-bottom: 20px;
     margin-left: 10px;
     line-height: 28px;
 }
+.ingredients-specifics li {
+    padding-left: 1.2rem;
+}
+.ingredients-specifics li::marker {
+    color: hsl(14, 45%, 36%);
+}
 .instructions{
     margin-bottom: 30px;
 }
@@ -98,9 +127,23 @@ margin-bottom: 20px;
     margin-top: 30px;
 }
 .instructions-specifics {
-    
+    list-style: none;
     margin-left: 10px;
     line-height: 28px;
+}
+.instructions-specifics li {
+    
+    counter-increment: my-counter;
+    padding-left: 0.7rem;
+    position: relative;
+    margin-left: 3rem;
+}
+.instructions-specifics li::before{
+    content: counter(my-counter) ". ";
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+  position: absolute;
+  left: -23px;
 }
 .instructions-specifics li strong {
     color:hsl(24, 5%, 18%) ;
@@ -131,6 +174,12 @@ margin-bottom: 20px;
     color: hsl(14, 45%, 36%);
     font-weight: 700;
 }
+hr {
+    border: 1px solid hsl(30, 18%, 87%);
+    width: 100%;
+    margin: 0 auto;
+  }
+  
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
